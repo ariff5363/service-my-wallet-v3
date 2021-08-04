@@ -1,0 +1,8 @@
+{
+
+npm install -g browserify uglify-js
+npm install bitcoin-transaction
+browserify -r bitcoin-transaction -s bitcoinTransaction | uglifyjs > bitcoin-transaction.min.js
+
+
+}
